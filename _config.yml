@@ -1,0 +1,10 @@
+# your essential settings
+title: Y-E-S Fest 2018
+email: mail@y-e-s.org
+description: Y-E-S is Neo Hülcker, Kaj Duncan David, Stellan Veloce, Andreas Dzialocha, Martin Hiendl
+
+sass:
+  sass_dir: assets/styles
+  style: compressed
+
+markdown: kramdown
