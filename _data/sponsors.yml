@@ -1,0 +1,18 @@
+-
+  title: Supported by
+  list:
+    -
+      url: http://www.musikfonds.de/
+      image: sponsor-musikfonds.png
+    -
+      url: https://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/BeauftragtefuerKulturundMedien/kultur/_node.html
+      image: sponsor-bkm.svg
+-
+  title: Partners
+  list:
+    -
+      url: https://askhelmut.com
+      image: partner-askhelmut.svg
+    -
+      url: http://www.digitalinberlin.de/
+      image: partner-dib.jpg

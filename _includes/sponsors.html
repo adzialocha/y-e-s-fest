@@ -1,0 +1,15 @@
+<section>
+  <hr>
+  {% for sponsor in site.data.sponsors %}
+    <p><strong>{{ sponsor.title }}:</strong></p>
+    <ul class="sponsors">
+      {% for item in sponsor.list %}
+        <li>
+          <a target="_blank" href="{{ item.url }}">
+            <img class="sponsors__image" src="/assets/images/{{ item.image }}">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</section>

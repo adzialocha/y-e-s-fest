@@ -1,0 +1,17 @@
+.logo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  height: 250px;
+
+  background-image: url("/assets/images/logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo__link {
+  display: block;
+
+  height: 100%;
+}

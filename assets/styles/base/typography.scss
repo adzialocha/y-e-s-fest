@@ -10,25 +10,23 @@ body {
   line-height: $line-height-base;
 }
 
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  display: inline;
+
+  background-color: rgba($white, .9);
+
   margin: 0;
 
   font-size: $font-size-base;
-}
 
-p {
-  margin: 0;
-}
-
-::selection {
-  background: $white;
-}
-
-::-moz-selection {
-  background: $white;
+  &::after {
+    content: "";
+    display: block;
+  }
 }

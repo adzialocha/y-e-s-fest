@@ -15,4 +15,19 @@ body {
   margin: 0;
 
   min-width: 300px;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+body {
+  background-image: url("/assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr {
+  height: 0;
+
+  border: 0;
 }

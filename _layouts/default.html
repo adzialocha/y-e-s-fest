@@ -17,8 +17,12 @@
   <link rel="stylesheet" type="text/css" href="/assets/styles/app.css?{{ site.time | date: '%s%N' }}">
 </head>
 <body>
-  <main>
+  <canvas class="background-canvas" id="background-canvas"></canvas>
+  <main class="content">
+    {% include logo.html %}
     {{ content }}
+    {% include sponsors.html %}
   </main>
+  <script type="text/javascript" src="/assets/scripts/app.js?{{ site.time | date: '%s%N' }}"></script>
 </body>
 </html>

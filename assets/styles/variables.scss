@@ -14,4 +14,10 @@ $line-height-base: 1.35;
 // colors
 $black: #000;
 $white: #fff;
-$blue: #00a1fb;
+$pink: #FB47FA;
+
+// z-index
+$z-index: (
+  background-canvas: 0,
+  content: 1,
+);

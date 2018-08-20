@@ -1,0 +1,5 @@
+.background-canvas {
+  position: fixed;
+
+  z-index: map-get($z-index, "background-canvas");
+}
