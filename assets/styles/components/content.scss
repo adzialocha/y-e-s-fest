@@ -10,4 +10,6 @@
   overflow: auto;
 
   z-index: map-get($z-index, "content");
+
+  -webkit-overflow-scrolling: touch;
 }
