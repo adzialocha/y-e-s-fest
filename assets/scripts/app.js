@@ -10,7 +10,7 @@ class Color {
   }
 }
 
-const UPDATE_INTERVAL = 1000 / 24
+const UPDATE_INTERVAL = 1000
 const MIN_DENSITY = 1
 const MAX_DENSITY = 20
 
@@ -56,12 +56,43 @@ function resizeCanvas() {
   canvasElem.height = window.innerHeight
 }
 
+let currentEventId
+
+function initProgramNavigation() {
+  const eventElements = document.getElementsByClassName('event-preview-toggle')
+  const previewElements = document.getElementsByClassName('event-preview')
+
+  for (let i = 0; i < eventElements.length; i += 1) {
+    const eventElem = eventElements[i]
+    const id = eventElem.dataset.targetId
+
+    eventElem.addEventListener('click', event => {
+      event.preventDefault()
+
+      if (currentEventId === id) {
+        currentEventId = undefined
+      } else {
+        currentEventId = id
+      }
+
+      for (let j = 0; j < previewElements.length; j += 1) {
+        previewElements[j].classList.remove('event-preview--visible')
+
+        if (previewElements[j].id === currentEventId) {
+          previewElements[j].classList.add('event-preview--visible')
+        }
+      }
+    })
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', resizeCanvas)
 
   window.setInterval(() => {
     updateBackground(getRandomArbitrary(MIN_DENSITY, MAX_DENSITY)) 
-  }, UPDATE_INTERVAL)
+  }, UPDATE_INTERVAL * Math.random())
 
   resizeCanvas()
+  initProgramNavigation();
 })

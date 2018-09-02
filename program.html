@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<h1>Our festival program</h1>
+<ul>
+  <li><a href="{{ site.url }}">Back to homepage</a></li>
+</ul>
+<h2>Saturday 29.09.18</h2>
+<hr>
+{% for event in site.saturday %}
+  <article>
+    <ul>
+      <li class="event"><strong>{{ event.title }}</strong> - {{ event.subtitle }}</li>
+      <li class="event">Time: {{ event.start | date: "%H:%M" }} - {{ event.end | date: "%H:%M" }}</li>
+      <li class="event event--{{ event.style }}">Type: {{ event.type }}</li>
+      <li class="event">Performers: {{ event.performers }}</li>
+    </ul>
+    <ul>
+      <li><a class="event-preview-toggle" data-target-id="event-saturday-{{ forloop.index }}" href="#">Read more</a></li>
+    </ul>
+    <section class="event-preview" id="event-saturday-{{ forloop.index }}">
+      {% if event.image %}
+        <img src="/files/{{ event.image }}">
+      {% endif %}
+      <p>{{ event.content | markdownify | strip_newlines }}</p>
+      {% if event.score_no %}
+        <ul>
+        <li><a target="_blank" href="{{ event.score }}"> Download "{{ event.title }}" score - {{ event.score_no }}</a></li>
+        </ul>
+      {% endif %}
+    </section>
+    <hr>
+  </article>
+{% endfor %}
+
+<h2>Sunday 30.09.18</h2>
+<hr>
+{% for event in site.sunday %}
+  <article>
+    <ul>
+      <li class="event"><strong>{{ event.title }}</strong> - {{ event.subtitle }}</li>
+      <li class="event">Time: {{ event.start | date: "%H:%M" }} - {{ event.end | date: "%H:%M" }}</li>
+      <li class="event event--{{ event.style }}">Type: {{ event.type }}</li>
+      <li class="event">Performers: {{ event.performers }}</li>
+    </ul>
+    <ul>
+      <li><a class="event-preview-toggle" data-target-id="event-sunday-{{ forloop.index }}" href="#">Read more</a></li>
+    </ul>
+    <section class="event-preview" id="event-sunday-{{ forloop.index }}">
+      {% if event.image %}
+        <img src="/files/{{ event.image }}">
+      {% endif %}
+      <p>{{ event.content | markdownify | strip_newlines }}</p>
+      {% if event.score_no %}
+        <ul>
+        <li><a target="_blank" href="{{ event.score }}"> Download "{{ event.title }}" score - {{ event.score_no }}</a></li>
+        </ul>
+      {% endif %}
+    </section>
+    <hr>
+  </article>
+{% endfor %}

@@ -1,0 +1,29 @@
+.event {
+  display: inline;
+
+  background-color: rgba($blue, 0.9);
+
+  &::before {
+    content: "★";
+
+    padding-right: 10px;
+  }
+
+  &::after {
+    content: "";
+
+    display: block;
+  }
+}
+
+.event--interactive {
+  background-color: rgba($red, 0.9);
+}
+
+.event--concert {
+  background-color: rgba($yellow, 0.9);
+}
+
+.event--workshop {
+  background-color: rgba($green, 0.9);
+}

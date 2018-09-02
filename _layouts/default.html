@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +15,7 @@
   <meta property="og:image:width" content="1667">
   <meta property="og:image:height" content="1200">
   <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400i,700i">
+  {% comment %} <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400i,700i"> {% endcomment %}
   <link rel="stylesheet" type="text/css" href="/assets/styles/app.css?{{ site.time | date: '%s%N' }}">
 </head>
 <body>
@@ -22,6 +24,7 @@
     {% include logo.html %}
     {{ content }}
     {% include sponsors.html %}
+    {% include footer.html %}
   </main>
   <script type="text/javascript" src="/assets/scripts/app.js?{{ site.time | date: '%s%N' }}"></script>
 </body>

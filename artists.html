@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /artists/index.html
+---
+
+<h1>Artists at Y-E-S Fest</h1>
+<ul>
+  <li><a href="{{ site.url }}">Back to homepage</a></li>
+</ul>
+{% for artist in site.artists %}
+  <article>
+    <h2>{{ artist.name }}</h2>
+    {% if artist.image %}
+      <img src="/files/{{ artist.image }}">
+      {% if artist.credit %}
+        <p>Photo by {{ artist.credit }}</p>
+      {% endif %}
+    {% endif %}
+    {% if artist.website or artist.video %}
+      <ul>
+        {% if artist.website %}
+          <li><a target="_blank" href="{{ artist.website }}">{{ artist.website }}</a></li>
+        {% endif %}
+        {% if artist.video %}
+          <li><a target="_blank" href="{{ artist.video }}">{{ artist.video }}</a></li>
+        {% endif %}
+      </ul>
+    {% endif %}
+    <p>{{ artist.content | markdownify | strip_newlines }}</p>
+    <hr>
+  </article>
+{% endfor %}
