@@ -2,54 +2,35 @@
 layout: default
 ---
 
+{% assign day_keys = "saturday, sunday" | split: ", " %}
+{% assign day_titles = "Saturday 29.09.18, Sunday 30.09.18" | split: ", " %}
+
 <h1>Our festival program</h1>
 <ul>
   <li><a href="{{ site.url }}">Back to homepage</a></li>
 </ul>
-<h2>Saturday 29.09.18</h2>
-<hr>
-{% for event in site.saturday %}
-  <article>
-    <ul class="event-block">
-      <li class="event event--{{ event.style }}">{{ event.start | date: "%H:%M" }} - {{ event.end | date: "%H:%M" }} <strong>{{ event.title }}</strong> - {{ event.subtitle }} <a class="event-preview-toggle" data-target-id="event-saturday-{{ forloop.index }}" href="#">Read more</a></li>
-    </ul>
-    <section class="event-preview" id="event-saturday-{{ forloop.index }}">
-      <p>{{ event.content | markdownify | strip_newlines }}</p>
-      <hr>
-      <p><strong>Type:</strong> {{ event.type }}</p>
-      <p><strong>Performers:</strong> {{ event.performers }}</p>
-      {% if event.image %}
-        <img src="/files/{{ event.image }}">
-        <br>
-      {% endif %}
-      {% if event.score_no %}
-        <p><a target="_blank" href="{{ event.score }}"> Download "{{ event.title }}" score - {{ event.score_no }}</a></p>
-      {% endif %}
-      <hr>
-    </section>
-  </article>
-{% endfor %}
-
-<h2>Sunday 30.09.18</h2>
-<hr>
-{% for event in site.sunday %}
-  <article>
-    <ul class="event-block">
-      <li class="event event--{{ event.style }}">{{ event.start | date: "%H:%M" }} - {{ event.end | date: "%H:%M" }} <strong>{{ event.title }}</strong> - {{ event.subtitle }} <a class="event-preview-toggle" data-target-id="event-saturday-{{ forloop.index }}" href="#">Read more</a></li>
-    </ul>
-    <section class="event-preview" id="event-saturday-{{ forloop.index }}">
-      <p>{{ event.content | markdownify | strip_newlines }}</p>
-      <hr>
-      <p><strong>Type:</strong> {{ event.type }}</p>
-      <p><strong>Performers:</strong> {{ event.performers }}</p>
-      {% if event.image %}
-        <img src="/files/{{ event.image }}">
-        <br>
-      {% endif %}
-      {% if event.score_no %}
-        <p><a target="_blank" href="{{ event.score }}"> Download "{{ event.title }}" score - {{ event.score_no }}</a></p>
-      {% endif %}
-      <hr>
-    </section>
-  </article>
+{% for key in day_keys %}
+  <h2>{{ day_titles[forloop.index0] }}</h2>
+  <hr>
+  {% for event in site[key] %}
+    <article>
+      <ul class="event-block">
+        <li class="event event--{{ event.style }}">{{ event.start | date: "%H:%M" }} - {{ event.end | date: "%H:%M" }} <strong>{{ event.title }}</strong> - {{ event.type }} {{ event.subtitle }} <a class="event-preview-toggle" data-target-id="event-{{ key }}-{{ forloop.index }}" href="#">Read more</a></li>
+      </ul>
+      <section class="event-preview" id="event-{{ key }}-{{ forloop.index }}">
+        <p>{{ event.content | markdownify | strip_newlines }}</p>
+        <hr>
+        <p><strong>Type:</strong> {{ event.type }}</p>
+        <p><strong>Performers:</strong> {{ event.performers }}</p>
+        {% if event.image %}
+          <img src="/files/{{ event.image }}">
+          <br>
+        {% endif %}
+        {% if event.score_no %}
+          <p><a target="_blank" href="{{ event.score }}"> Download "{{ event.title }}" score - {{ event.score_no }}</a></p>
+        {% endif %}
+        <hr>
+      </section>
+    </article>
+  {% endfor %}
 {% endfor %}
