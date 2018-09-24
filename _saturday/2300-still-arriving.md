@@ -4,7 +4,7 @@ start: 2018-09-29T23:00:00Z
 end: 2018-09-29T24:00:00Z
 type: Concert
 style: concert
-performers: Martin Hiendl
+performers: Sam Yulsman
 image: YES002_StillArriving.jpg
 subtitle: by Martin Hiendl for piano and electronics
 score_no: YES#2

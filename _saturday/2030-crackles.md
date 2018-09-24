@@ -4,7 +4,7 @@ start: 2018-09-29T20:30:00Z
 end: 2018-09-29T21:00:00Z
 type: Concert
 style: concert
-performers: Martin Hiendl, Andreas Dzialocha, Stellan Veloce, Kaj Duncan David, Sam Yulsman
+performers: Neo Hülcker, Stellan Veloce, Kaj Duncan David, Sam Yulsman, Andreas Dzialocha
 image: YES005_Crackles.jpg
 subtitle: by Neo Hülcker for bodies on stage
 score_no: YES#5

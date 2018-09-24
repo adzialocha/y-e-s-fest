@@ -7,4 +7,4 @@ style: interactive
 subtitle: for the start
 performers: You and me
 ---
-Nom! Nom!
+Nom! Nom! We think you need some food before we get started with all the workshops.

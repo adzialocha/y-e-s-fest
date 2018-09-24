@@ -4,7 +4,7 @@ start: 2018-09-30T17:30:00Z
 end: 2018-09-30T18:00:00Z
 type: Concert
 style: concert
-performers: Everyone
+performers: Yiran Zhao
 image: YES011_90DEGREES.jpg
 subtitle: by Yiran Zhao for performer, videos and voice
 ---

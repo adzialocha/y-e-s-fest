@@ -2,8 +2,8 @@
 title: Ear action
 start: 2018-09-29T16:00:00Z
 end: 2018-09-29T17:00:00Z
-type: Performance
-style: concert
+type: Workshop performance
+style: interactive
 performers: Everyone
 image: YES001_EarAction.jpg
 subtitle: by Neo Hülcker and Stellan Veloce for performers and various objects

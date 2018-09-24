@@ -1,7 +1,7 @@
 ---
 title: Little Moments of Invisible Deaths (LMOID)
 start: 2018-09-30T20:00:00Z
-end: 2018-09-30T21:30:00Z
+end: 2018-09-30T22:00:00Z
 type: Concert
 style: concert
 performers: Martin Hiendl, Sam Yulsman

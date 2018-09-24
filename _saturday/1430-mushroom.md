@@ -7,4 +7,4 @@ style: workshop
 performers: Everyone
 subtitle: by Stellan Veloce and Neo Hülcker
 ---
-Build a sound installation for the mushroom tunnel together.
+This is a workshop for everyone where we build a sound installation for the mushroom tunnel together.
