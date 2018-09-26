@@ -1,7 +1,7 @@
 ---
 title: 90 DEGREES
-start: 2018-09-30T17:30:00Z
-end: 2018-09-30T18:00:00Z
+start: 2018-09-29T20:00:00Z
+end: 2018-09-29T20:30:00Z
 type: Concert
 style: concert
 performers: Yiran Zhao
