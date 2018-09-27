@@ -21,7 +21,9 @@ layout: default
         <p>{{ event.content | markdownify | strip_newlines }}</p>
         <hr>
         <p><strong>Type:</strong> {{ event.type }}</p>
-        <p><strong>Performers:</strong> {{ event.performers }}</p>
+        {% if event.performers %}
+          <p><strong>Performers:</strong> {{ event.performers }}</p>
+        {% endif %}
         {% if event.image %}
           <img src="/files/{{ event.image }}">
           <br>

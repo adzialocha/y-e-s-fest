@@ -1,7 +1,7 @@
 ---
 title: Human windchimes
-start: 2018-09-30T18:30:00Z
-end: 2018-09-30T19:00:00Z
+start: 2018-09-30T19:00:00Z
+end: 2018-09-30T19:30:00Z
 type: Workshop performance
 style: interactive
 performers: Workshop participants

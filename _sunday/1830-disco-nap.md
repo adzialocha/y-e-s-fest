@@ -1,7 +1,7 @@
 ---
 title: Disco nap
-start: 2018-09-30T21:00:00Z
-end: 2018-09-30T21:30:00Z
+start: 2018-09-30T18:30:00Z
+end: 2018-09-30T19:00:00Z
 type: Performance with audience
 style: interactive
 performers: Everyone
