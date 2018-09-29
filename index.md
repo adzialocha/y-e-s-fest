@@ -4,7 +4,7 @@ layout: default
 
 # Y-E-S Fest
 
-29 & 30 September 2018 - Agora, Am Sudhaus 2, Berlin
+29 & 30 September 2018 - Agora, Am Sudhaus 5, Berlin
 
 * [show program](/program)
 * [go to all artists](/artists)
