@@ -6,7 +6,7 @@ type: Concert
 style: concert
 performers: Sam Yulsman
 image: YES002_StillArriving.jpg
-subtitle: by Martin Hiendl for piano and electronics
+subtitle: by Laure M. Hiendl for piano and electronics
 score_no: YES#2
 score: https://s3.eu-central-1.amazonaws.com/y-e-s/YES002_StillArriving.zip
 ---

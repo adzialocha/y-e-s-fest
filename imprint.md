@@ -4,7 +4,7 @@ layout: default
 
 * [back to homepage](https://2018.y-e-s.org)
 
-Y-E-S Fest is organized by the Y-E-S Collective (Martin Hiendl, Stellan Veloce, Neo Hülcker, Kaj Duncan David, Andreas Dzialocha).
+Y-E-S Fest is organized by the Y-E-S Collective (Laure M. Hiendl, Stellan Veloce, Neo Hülcker, Kaj Duncan David, Andreas Dzialocha).
 
 ---
 
